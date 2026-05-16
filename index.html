@@ -82,6 +82,11 @@
             background: var(--gradient-navy);
             position: relative; overflow: hidden;
         }
+        .hero::after {
+            content: ''; position: absolute; inset: 0;
+            background: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80') center/cover no-repeat;
+            opacity: 0.06;
+        }
         .hero::before {
             content: ''; position: absolute; inset: 0;
             background:
@@ -434,6 +439,51 @@
         }
         footer a { color: var(--gold-light); text-decoration: none; }
 
+        /* ── PHOTO BANNER ── */
+        .photo-banner {
+            width: 100%; height: 280px; border-radius: 20px;
+            overflow: hidden; margin-bottom: 3rem;
+        }
+        .photo-banner img {
+            width: 100%; height: 100%; object-fit: cover;
+            filter: brightness(0.85) saturate(0.9);
+        }
+
+        /* ── HIGHLIGHTS GALLERY ── */
+        .highlights { background: var(--white); }
+        .highlights-grid {
+            display: grid; grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+        .highlight-card {
+            border-radius: 20px; overflow: hidden;
+            position: relative; cursor: pointer;
+            transition: all 0.4s ease;
+        }
+        .highlight-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 40px rgba(44,30,15,0.1);
+        }
+        .highlight-card img {
+            width: 100%; height: 220px; object-fit: cover;
+            display: block; transition: transform 0.5s ease;
+        }
+        .highlight-card:hover img {
+            transform: scale(1.05);
+        }
+        .highlight-overlay {
+            position: absolute; bottom: 0; left: 0; right: 0;
+            padding: 1.5rem; background: linear-gradient(transparent, rgba(44,30,15,0.8));
+            color: var(--white);
+        }
+        .highlight-overlay h4 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.1rem; font-weight: 600; margin-bottom: 0.2rem;
+        }
+        .highlight-overlay p {
+            font-size: 0.78rem; opacity: 0.85;
+        }
+
         /* ── ANIMATIONS (scroll reveal) ── */
         .reveal {
             opacity: 0; transform: translateY(40px);
@@ -460,6 +510,9 @@
             .hamburger { display: flex; }
             .timeline { padding-left: 2rem; }
             .timeline-item { padding: 1.5rem; }
+            .highlights-grid { grid-template-columns: 1fr; }
+            .highlight-card img { height: 180px; }
+            .photo-banner { height: 180px; }
             .hero-name { font-size: 2.5rem; }
             section { padding: 4rem 1.5rem; }
         }
@@ -550,6 +603,9 @@
             <div class="section-line"></div>
         </div>
         <div class="timeline">
+            <div class="photo-banner reveal">
+                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80" alt="Professional workspace">
+            </div>
             <div class="timeline-item reveal">
                 <span class="timeline-date">Jul 2021 — Dec 2024</span>
                 <h3 class="timeline-company">Douyu International Holdings <small>(NYSE: DOYU)</small></h3>
@@ -640,6 +696,40 @@
                     <span class="skill-tag">iMovie</span>
                     <span class="skill-tag">Presentation Design</span>
                     <span class="skill-tag">Visual Storytelling</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- HIGHLIGHTS -->
+<section class="highlights" id="highlights">
+    <div class="container">
+        <div class="section-header reveal">
+            <p class="section-label">Visual Story</p>
+            <h2 class="section-title">Highlights</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="highlights-grid">
+            <div class="highlight-card reveal">
+                <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&q=80" alt="Stock market data">
+                <div class="highlight-overlay">
+                    <h4>Capital Markets</h4>
+                    <p>NYSE trading floor experience</p>
+                </div>
+            </div>
+            <div class="highlight-card reveal">
+                <img src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=600&q=80" alt="Business presentation">
+                <div class="highlight-overlay">
+                    <h4>Investor Roadshows</h4>
+                    <p>30+ institutional events coordinated</p>
+                </div>
+            </div>
+            <div class="highlight-card reveal">
+                <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&q=80" alt="Cross-cultural collaboration">
+                <div class="highlight-overlay">
+                    <h4>Cross-Cultural Bridge</h4>
+                    <p>8 years of international experience</p>
                 </div>
             </div>
         </div>
