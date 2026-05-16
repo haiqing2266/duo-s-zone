@@ -1,60 +1,60 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haiqing Li — Investor Relations Professional</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <title>Haiqing Li â€” Investor Relations Professional</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lato:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
         *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
         :root {
-            --navy: #0a1628;
-            --navy-light: #132038;
-            --gold: #c9a84c;
-            --gold-light: #e0c778;
-            --gold-dark: #a8892e;
-            --slate: #8892a4;
-            --light: #f4f6f9;
+            --navy: #2c1e0f;
+            --navy-light: #3d2b18;
+            --gold: #8b6f4e;
+            --gold-light: #c4a882;
+            --gold-dark: #6b4a2e;
+            --slate: #7a6b5a;
+            --light: #faf3e8;
             --white: #ffffff;
-            --accent: #1e3a5f;
-            --gradient-gold: linear-gradient(135deg, #c9a84c, #e0c778, #c9a84c);
-            --gradient-navy: linear-gradient(180deg, #0a1628 0%, #132038 100%);
+            --accent: #a67c52;
+            --gradient-gold: linear-gradient(135deg, #c4a882, #e8d5b7, #c4a882);
+            --gradient-navy: linear-gradient(180deg, #faf3e8 0%, #f5ece0 100%);
         }
 
         html { scroll-behavior: smooth; }
 
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-family: 'Lato', -apple-system, BlinkMacSystemFont, sans-serif;
             color: var(--navy);
             background: var(--light);
             line-height: 1.7;
             overflow-x: hidden;
         }
 
-        /* ── NAV ── */
+        /* â”€â”€ NAV â”€â”€ */
         nav {
             position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
-            background: rgba(10, 22, 40, 0.92);
+            background: rgba(250, 243, 232, 0.92);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
-            border-bottom: 1px solid rgba(201, 168, 76, 0.15);
+            border-bottom: 1px solid rgba(139, 111, 78, 0.15);
             transition: all 0.4s ease;
         }
-        nav.scrolled { background: rgba(10, 22, 40, 0.98); box-shadow: 0 4px 30px rgba(0,0,0,0.3); }
+        nav.scrolled { background: rgba(250, 243, 232, 0.98); box-shadow: 0 4px 30px rgba(44,30,15,0.08); }
         .nav-inner {
             max-width: 1200px; margin: 0 auto;
             display: flex; align-items: center; justify-content: space-between;
             padding: 0 2rem; height: 70px;
         }
         .nav-logo {
-            font-family: 'Playfair Display', serif; font-size: 1.4rem;
+            font-family: 'Cormorant Garamond', serif; font-size: 1.5rem;
             font-weight: 700; color: var(--gold);
             letter-spacing: 1px; text-decoration: none;
         }
         .nav-links { display: flex; gap: 2rem; list-style: none; }
         .nav-links a {
-            color: rgba(255,255,255,0.7); text-decoration: none;
+            color: rgba(44,30,15,0.6); text-decoration: none;
             font-size: 0.85rem; font-weight: 500; letter-spacing: 0.5px;
             text-transform: uppercase; transition: color 0.3s;
             position: relative;
@@ -72,11 +72,11 @@
             cursor: pointer; background: none; border: none; padding: 5px;
         }
         .hamburger span {
-            width: 24px; height: 2px; background: var(--gold);
+            width: 24px; height: 2px; background: var(--navy);
             transition: all 0.3s ease;
         }
 
-        /* ── HERO ── */
+        /* â”€â”€ HERO â”€â”€ */
         .hero {
             min-height: 100vh; display: flex; align-items: center; justify-content: center;
             background: var(--gradient-navy);
@@ -85,15 +85,15 @@
         .hero::before {
             content: ''; position: absolute; inset: 0;
             background:
-                radial-gradient(ellipse 600px 600px at 20% 50%, rgba(201,168,76,0.06) 0%, transparent 70%),
-                radial-gradient(ellipse 400px 400px at 80% 30%, rgba(30,58,95,0.15) 0%, transparent 70%);
+                radial-gradient(ellipse 600px 600px at 20% 50%, rgba(196,168,130,0.1) 0%, transparent 70%),
+                radial-gradient(ellipse 400px 400px at 80% 30%, rgba(139,111,78,0.06) 0%, transparent 70%);
         }
         .hero-particles {
             position: absolute; inset: 0; overflow: hidden;
         }
         .hero-particles span {
             position: absolute; width: 2px; height: 2px;
-            background: rgba(201,168,76,0.3); border-radius: 50%;
+            background: rgba(139,111,78,0.2); border-radius: 50%;
             animation: float-up linear infinite;
         }
         @keyframes float-up {
@@ -109,7 +109,7 @@
         }
         .hero-badge {
             display: inline-block;
-            background: rgba(201,168,76,0.1); border: 1px solid rgba(201,168,76,0.25);
+            background: rgba(139,111,78,0.08); border: 1px solid rgba(139,111,78,0.2);
             color: var(--gold); font-size: 0.75rem; font-weight: 600;
             letter-spacing: 3px; text-transform: uppercase;
             padding: 0.5rem 1.5rem; border-radius: 50px;
@@ -117,13 +117,13 @@
             animation: fadeInUp 0.8s ease 0.2s both;
         }
         .hero-name {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Cormorant Garamond', serif;
             font-size: clamp(2.8rem, 7vw, 5rem); font-weight: 700;
-            color: var(--white); line-height: 1.1; margin-bottom: 0.5rem;
+            color: var(--navy); line-height: 1.1; margin-bottom: 0.5rem;
             animation: fadeInUp 0.8s ease 0.4s both;
         }
         .hero-name-cn {
-            font-size: clamp(1.2rem, 3vw, 1.6rem); color: rgba(201,168,76,0.6);
+            font-size: clamp(1.2rem, 3vw, 1.6rem); color: var(--gold-light);
             font-weight: 300; letter-spacing: 8px; margin-bottom: 1.5rem;
             animation: fadeInUp 0.8s ease 0.5s both;
         }
@@ -144,16 +144,16 @@
             transition: all 0.4s ease; cursor: pointer; border: none;
         }
         .btn-primary {
-            background: var(--gradient-gold); color: var(--navy);
-            box-shadow: 0 4px 20px rgba(201,168,76,0.3);
+            background: var(--gold); color: var(--white);
+            box-shadow: 0 4px 20px rgba(139,111,78,0.25);
         }
         .btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 30px rgba(201,168,76,0.45);
+            box-shadow: 0 8px 30px rgba(139,111,78,0.35);
         }
         .btn-outline {
-            background: transparent; color: var(--white);
-            border: 1px solid rgba(255,255,255,0.25);
+            background: transparent; color: var(--navy);
+            border: 1px solid rgba(44,30,15,0.25);
         }
         .btn-outline:hover {
             border-color: var(--gold); color: var(--gold);
@@ -166,7 +166,7 @@
         }
         .hero-scroll span {
             display: block; width: 24px; height: 38px;
-            border: 2px solid rgba(201,168,76,0.4); border-radius: 12px;
+            border: 2px solid rgba(139,111,78,0.3); border-radius: 12px;
             position: relative;
         }
         .hero-scroll span::after {
@@ -188,7 +188,7 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        /* ── SECTIONS ── */
+        /* â”€â”€ SECTIONS â”€â”€ */
         section { padding: 6rem 2rem; }
         .section-header {
             text-align: center; margin-bottom: 4rem;
@@ -199,7 +199,7 @@
             margin-bottom: 0.75rem;
         }
         .section-title {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Cormorant Garamond', serif;
             font-size: clamp(2rem, 4vw, 2.8rem);
             font-weight: 700; color: var(--navy);
         }
@@ -209,7 +209,7 @@
         }
         .container { max-width: 1100px; margin: 0 auto; }
 
-        /* ── ABOUT ── */
+        /* â”€â”€ ABOUT â”€â”€ */
         .about { background: var(--white); }
         .about-grid {
             display: grid; grid-template-columns: 1fr 1fr;
@@ -222,15 +222,15 @@
         .stat-card {
             background: var(--light); border-radius: 16px;
             padding: 1.5rem; text-align: center;
-            border: 1px solid rgba(10,22,40,0.06);
+            border: 1px solid rgba(44,30,15,0.06);
             transition: all 0.3s ease;
         }
         .stat-card:hover {
             transform: translateY(-4px);
-            box-shadow: 0 10px 30px rgba(10,22,40,0.08);
+            box-shadow: 0 10px 30px rgba(44,30,15,0.08);
         }
         .stat-number {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Cormorant Garamond', serif;
             font-size: 2.2rem; font-weight: 700; color: var(--gold-dark);
             line-height: 1;
         }
@@ -239,58 +239,39 @@
             margin-top: 0.4rem; font-weight: 500;
         }
         .about-text p {
-            color: #4a5568; font-size: 1.05rem; margin-bottom: 1rem;
+            color: #5a4a3a; font-size: 1.05rem; margin-bottom: 1rem;
         }
         .about-visual {
             display: flex; justify-content: center; align-items: center;
         }
         .about-card {
-            background: var(--gradient-navy);
-            border-radius: 24px; padding: 3rem;
-            color: var(--white); position: relative; overflow: hidden;
+            background: var(--light);
+            border-radius: 24px; padding: 0;
+            color: var(--navy); position: relative; overflow: hidden;
             width: 100%;
         }
-        .about-card::before {
-            content: ''; position: absolute; top: -50%; right: -50%;
-            width: 200%; height: 200%;
-            background: radial-gradient(circle at center, rgba(201,168,76,0.08) 0%, transparent 50%);
-        }
-        .about-card-icon {
-            font-size: 3rem; margin-bottom: 1.5rem;
-        }
-        .about-card h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.4rem; margin-bottom: 1rem;
-        }
-        .about-card p {
-            color: var(--slate); font-size: 0.95rem; line-height: 1.8;
-        }
-        .about-card .tags {
-            display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.5rem;
-        }
-        .about-card .tag {
-            background: rgba(201,168,76,0.12); color: var(--gold);
-            padding: 0.35rem 0.9rem; border-radius: 50px;
-            font-size: 0.75rem; font-weight: 500;
+        .about-card img {
+            width: 100%; height: auto; border-radius: 24px;
+            object-fit: cover; display: block;
         }
 
-        /* ── EXPERIENCE ── */
+        /* â”€â”€ EXPERIENCE â”€â”€ */
         .experience { background: var(--light); }
         .timeline { position: relative; padding-left: 3rem; }
         .timeline::before {
             content: ''; position: absolute; left: 0; top: 0; bottom: 0;
-            width: 2px; background: linear-gradient(180deg, var(--gold), rgba(201,168,76,0.1));
+            width: 2px; background: linear-gradient(180deg, var(--gold), rgba(139,111,78,0.1));
         }
         .timeline-item {
             position: relative; margin-bottom: 3rem;
             padding: 2.5rem; background: var(--white);
-            border-radius: 20px; border: 1px solid rgba(10,22,40,0.06);
-            box-shadow: 0 4px 20px rgba(10,22,40,0.04);
+            border-radius: 20px; border: 1px solid rgba(44,30,15,0.06);
+            box-shadow: 0 4px 20px rgba(44,30,15,0.04);
             transition: all 0.4s ease;
         }
         .timeline-item:hover {
             transform: translateX(6px);
-            box-shadow: 0 10px 40px rgba(10,22,40,0.08);
+            box-shadow: 0 10px 40px rgba(44,30,15,0.06);
         }
         .timeline-item::before {
             content: ''; position: absolute;
@@ -299,7 +280,7 @@
             width: 14px; height: 14px;
             background: var(--gold); border-radius: 50%;
             border: 3px solid var(--light);
-            box-shadow: 0 0 0 3px rgba(201,168,76,0.2);
+            box-shadow: 0 0 0 3px rgba(139,111,78,0.2);
         }
         .timeline-date {
             display: inline-block;
@@ -308,12 +289,12 @@
             font-size: 0.8rem; font-weight: 600; margin-bottom: 1rem;
         }
         .timeline-company {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Cormorant Garamond', serif;
             font-size: 1.4rem; font-weight: 700; color: var(--navy);
             margin-bottom: 0.2rem;
         }
         .timeline-company small {
-            font-family: 'Inter', sans-serif; font-size: 0.85rem;
+            font-family: 'Lato', sans-serif; font-size: 0.85rem;
             font-weight: 500; color: var(--slate);
         }
         .timeline-role {
@@ -325,35 +306,35 @@
         }
         .timeline-details li {
             padding-left: 1.5rem; position: relative;
-            color: #4a5568; font-size: 0.92rem;
+            color: #5a4a3a; font-size: 0.92rem;
         }
         .timeline-details li::before {
-            content: '▸'; position: absolute; left: 0;
+            content: 'â–¸'; position: absolute; left: 0;
             color: var(--gold); font-weight: 700;
         }
 
-        /* ── EDUCATION ── */
+        /* â”€â”€ EDUCATION â”€â”€ */
         .education { background: var(--white); }
         .edu-card {
             display: flex; gap: 2.5rem; align-items: center;
             background: var(--light); border-radius: 24px;
-            padding: 3rem; border: 1px solid rgba(10,22,40,0.06);
+            padding: 3rem; border: 1px solid rgba(44,30,15,0.06);
             max-width: 800px; margin: 0 auto;
             transition: all 0.4s ease;
         }
         .edu-card:hover {
-            box-shadow: 0 15px 50px rgba(10,22,40,0.08);
+            box-shadow: 0 15px 50px rgba(44,30,15,0.08);
             transform: translateY(-4px);
         }
         .edu-icon {
             width: 90px; height: 90px; flex-shrink: 0;
-            background: var(--gradient-navy);
+            background: linear-gradient(135deg, #e8d5b7, #c4a882);
             border-radius: 20px; display: flex;
             align-items: center; justify-content: center;
             font-size: 2.5rem;
         }
         .edu-info h3 {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Cormorant Garamond', serif;
             font-size: 1.4rem; color: var(--navy); margin-bottom: 0.3rem;
         }
         .edu-info .degree {
@@ -366,7 +347,7 @@
         }
         .edu-info .edu-meta span { display: flex; align-items: center; gap: 0.4rem; }
 
-        /* ── SKILLS ── */
+        /* â”€â”€ SKILLS â”€â”€ */
         .skills { background: var(--light); }
         .skills-grid {
             display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -374,12 +355,12 @@
         }
         .skill-category {
             background: var(--white); border-radius: 20px;
-            padding: 2rem; border: 1px solid rgba(10,22,40,0.06);
+            padding: 2rem; border: 1px solid rgba(44,30,15,0.06);
             transition: all 0.4s ease;
         }
         .skill-category:hover {
             transform: translateY(-6px);
-            box-shadow: 0 15px 40px rgba(10,22,40,0.08);
+            box-shadow: 0 15px 40px rgba(44,30,15,0.08);
         }
         .skill-category-icon {
             width: 50px; height: 50px; border-radius: 14px;
@@ -395,25 +376,25 @@
         }
         .skill-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
         .skill-tag {
-            background: var(--light); color: #4a5568;
+            background: var(--light); color: #5a4a3a;
             padding: 0.45rem 1rem; border-radius: 50px;
             font-size: 0.82rem; font-weight: 500;
-            border: 1px solid rgba(10,22,40,0.06);
+            border: 1px solid rgba(139,111,78,0.12);
             transition: all 0.3s ease;
         }
         .skill-tag:hover {
-            background: var(--navy); color: var(--white);
+            background: var(--gold); color: var(--white);
             transform: scale(1.05);
         }
 
-        /* ── CONTACT ── */
+        /* â”€â”€ CONTACT â”€â”€ */
         .contact {
-            background: var(--gradient-navy);
+            background: linear-gradient(180deg, #3d2b18 0%, #2c1e0f 100%);
             color: var(--white); position: relative; overflow: hidden;
         }
         .contact::before {
             content: ''; position: absolute; inset: 0;
-            background: radial-gradient(ellipse 800px 600px at 50% 100%, rgba(201,168,76,0.06) 0%, transparent 70%);
+            background: radial-gradient(ellipse 800px 600px at 50% 100%, rgba(139,111,78,0.08) 0%, transparent 70%);
         }
         .contact .section-title { color: var(--white); }
         .contact-grid {
@@ -430,30 +411,30 @@
         .contact-card:hover {
             background: rgba(255,255,255,0.08);
             transform: translateY(-6px);
-            border-color: rgba(201,168,76,0.3);
+            border-color: rgba(196,168,130,0.4);
         }
         .contact-icon {
             font-size: 2rem; margin-bottom: 1rem;
         }
         .contact-card h4 {
             font-size: 0.75rem; text-transform: uppercase;
-            letter-spacing: 2px; color: var(--gold);
+            letter-spacing: 2px; color: var(--gold-light);
             margin-bottom: 0.5rem; font-weight: 600;
         }
         .contact-card p, .contact-card a {
             color: rgba(255,255,255,0.8); font-size: 0.95rem;
             text-decoration: none; transition: color 0.3s;
         }
-        .contact-card a:hover { color: var(--gold); }
+        .contact-card a:hover { color: var(--gold-light); }
 
-        /* ── FOOTER ── */
+        /* â”€â”€ FOOTER â”€â”€ */
         footer {
-            background: #060e1a; text-align: center;
+            background: #1e1409; text-align: center;
             padding: 2rem; color: var(--slate); font-size: 0.8rem;
         }
-        footer a { color: var(--gold); text-decoration: none; }
+        footer a { color: var(--gold-light); text-decoration: none; }
 
-        /* ── ANIMATIONS (scroll reveal) ── */
+        /* â”€â”€ ANIMATIONS (scroll reveal) â”€â”€ */
         .reveal {
             opacity: 0; transform: translateY(40px);
             transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
@@ -462,7 +443,7 @@
             opacity: 1; transform: translateY(0);
         }
 
-        /* ── RESPONSIVE ── */
+        /* â”€â”€ RESPONSIVE â”€â”€ */
         @media (max-width: 768px) {
             .about-grid { grid-template-columns: 1fr; gap: 2rem; }
             .about-visual { order: -1; }
@@ -471,9 +452,9 @@
             .nav-links {
                 display: none; flex-direction: column;
                 position: absolute; top: 70px; left: 0; right: 0;
-                background: rgba(10,22,40,0.98);
+                background: rgba(250,243,232,0.98);
                 padding: 1.5rem 2rem; gap: 1rem;
-                border-bottom: 1px solid rgba(201,168,76,0.15);
+                border-bottom: 1px solid rgba(139,111,78,0.15);
             }
             .nav-links.open { display: flex; }
             .hamburger { display: flex; }
@@ -509,8 +490,8 @@
     <div class="hero-content">
         <div class="hero-badge">Investor Relations &bull; Capital Markets</div>
         <h1 class="hero-name">Haiqing Li</h1>
-        <p class="hero-name-cn">李 海 清</p>
-        <p class="hero-title">Finance Professional · NYSE-Listed Company IR Experience · Bilingual Communicator</p>
+        <p class="hero-name-cn">æŽ æµ· æ¸…</p>
+        <p class="hero-title">Finance Professional Â· NYSE-Listed Company IR Experience Â· Bilingual Communicator</p>
         <div class="hero-cta">
             <a href="#contact" class="btn btn-primary">Get in Touch</a>
             <a href="#experience" class="btn btn-outline">View Experience</a>
@@ -530,7 +511,7 @@
         <div class="about-grid">
             <div class="about-text reveal">
                 <p>I am a finance professional with <strong>3+ years of investor relations experience</strong> at Douyu International Holdings (NYSE: DOYU), a publicly listed company on the New York Stock Exchange.</p>
-                <p>As a core member of a lean 3-person IR team, I developed deep expertise in shareholder management, roadshow planning, earnings communications, and regulatory filings — bridging the gap between Chinese management teams and global institutional investors.</p>
+                <p>As a core member of a lean 3-person IR team, I developed deep expertise in shareholder management, roadshow planning, earnings communications, and regulatory filings â€” bridging the gap between Chinese management teams and global institutional investors.</p>
                 <p>With <strong>8 years of overseas study experience</strong> and native-level bilingual fluency in Chinese and English, I bring a unique cross-cultural perspective to every stakeholder interaction.</p>
                 <div class="about-stats">
                     <div class="stat-card">
@@ -553,16 +534,7 @@
             </div>
             <div class="about-visual reveal">
                 <div class="about-card">
-                    <div class="about-card-icon">📊</div>
-                    <h3>What I Bring to the Table</h3>
-                    <p>A unique blend of financial acumen, cross-cultural communication, and hands-on capital markets experience — ready to drive value in investor relations, financial PR, and corporate strategy roles.</p>
-                    <div class="tags">
-                        <span class="tag">Investor Relations</span>
-                        <span class="tag">Financial PR</span>
-                        <span class="tag">Capital Markets</span>
-                        <span class="tag">Bilingual</span>
-                        <span class="tag">SEC Filings</span>
-                    </div>
+                    <img src="img_v3_0211o_360c079c-4ee8-46f3-b3bd-ce6965bbfb4g.jpg" alt="Haiqing Li - Professional Headshot">
                 </div>
             </div>
         </div>
@@ -579,21 +551,21 @@
         </div>
         <div class="timeline">
             <div class="timeline-item reveal">
-                <span class="timeline-date">Jul 2021 — Dec 2024</span>
+                <span class="timeline-date">Jul 2021 â€” Dec 2024</span>
                 <h3 class="timeline-company">Douyu International Holdings <small>(NYSE: DOYU)</small></h3>
                 <p class="timeline-role">Investor Relations Specialist</p>
                 <ul class="timeline-details">
                     <li>Core member of a 3-person IR team managing all investor communications for a NYSE-listed company</li>
                     <li>Tracked and maintained relationships with top 30 institutional shareholders through systematic monitoring</li>
                     <li>Conducted daily Bloomberg Terminal monitoring for market intelligence and competitive analysis</li>
-                    <li>Coordinated 30+ quarterly earnings calls, roadshows, and investor conferences — each engaging 20–30 institutional investors</li>
+                    <li>Coordinated 30+ quarterly earnings calls, roadshows, and investor conferences â€” each engaging 20â€“30 institutional investors</li>
                     <li>Analyzed sell-side analyst reports to inform management decisions and IR strategy</li>
                     <li>Supported preparation and filing of 20-F annual reports and 6-K current reports with the SEC</li>
                     <li>Managed media collaborations to enhance corporate visibility and brand positioning</li>
                 </ul>
             </div>
             <div class="timeline-item reveal">
-                <span class="timeline-date">Jul 2019 — Aug 2019</span>
+                <span class="timeline-date">Jul 2019 â€” Aug 2019</span>
                 <h3 class="timeline-company">Huarong Tongyuan <small>(Shanghai)</small></h3>
                 <p class="timeline-role">Banking Department Intern</p>
                 <ul class="timeline-details">
@@ -615,14 +587,14 @@
             <div class="section-line"></div>
         </div>
         <div class="edu-card reveal">
-            <div class="edu-icon">🎓</div>
+            <div class="edu-icon">ðŸŽ“</div>
             <div class="edu-info">
                 <h3>SUNY Binghamton</h3>
                 <p class="degree">Bachelor of Arts in Economics</p>
                 <div class="edu-meta">
-                    <span>📅 2016 — 2020</span>
-                    <span>📍 Binghamton, NY</span>
-                    <span>📊 GPA: 3.0 / 4.0</span>
+                    <span>ðŸ“… 2016 â€” 2020</span>
+                    <span>ðŸ“ Binghamton, NY</span>
+                    <span>ðŸ“Š GPA: 3.0 / 4.0</span>
                 </div>
                 <p style="margin-top: 0.8rem; color: var(--slate); font-size: 0.9rem;">
                     8 years of overseas study experience, cultivating a strong cross-cultural perspective and native-level English proficiency.
@@ -642,7 +614,7 @@
         </div>
         <div class="skills-grid">
             <div class="skill-category reveal">
-                <div class="skill-category-icon lang">🌐</div>
+                <div class="skill-category-icon lang">ðŸŒ</div>
                 <h3>Languages</h3>
                 <div class="skill-tags">
                     <span class="skill-tag">Chinese (Native)</span>
@@ -651,7 +623,7 @@
                 </div>
             </div>
             <div class="skill-category reveal">
-                <div class="skill-category-icon tools">🛠️</div>
+                <div class="skill-category-icon tools">ðŸ› ï¸</div>
                 <h3>Professional Tools</h3>
                 <div class="skill-tags">
                     <span class="skill-tag">Bloomberg Terminal</span>
@@ -661,7 +633,7 @@
                 </div>
             </div>
             <div class="skill-category reveal">
-                <div class="skill-category-icon soft">🎨</div>
+                <div class="skill-category-icon soft">ðŸŽ¨</div>
                 <h3>Creative & Media</h3>
                 <div class="skill-tags">
                     <span class="skill-tag">Adobe Photoshop</span>
@@ -684,22 +656,22 @@
         </div>
         <div class="contact-grid">
             <div class="contact-card reveal">
-                <div class="contact-icon">✉️</div>
+                <div class="contact-icon">âœ‰ï¸</div>
                 <h4>Email</h4>
                 <a href="mailto:749920306@qq.com">749920306@qq.com</a>
             </div>
             <div class="contact-card reveal">
-                <div class="contact-icon">📱</div>
+                <div class="contact-icon">ðŸ“±</div>
                 <h4>Phone</h4>
                 <a href="tel:+8613907102266">139-0710-2266</a>
             </div>
             <div class="contact-card reveal">
-                <div class="contact-icon">📍</div>
+                <div class="contact-icon">ðŸ“</div>
                 <h4>Location</h4>
                 <p>Wuhan, China</p>
             </div>
             <div class="contact-card reveal">
-                <div class="contact-icon">💼</div>
+                <div class="contact-icon">ðŸ’¼</div>
                 <h4>Target Role</h4>
                 <p>IR / Financial PR / Capital Markets</p>
             </div>
@@ -709,7 +681,7 @@
 
 <!-- FOOTER -->
 <footer>
-    <p>&copy; 2026 Haiqing Li &mdash; Built with care. <a href="#hero">Back to top ↑</a></p>
+    <p>&copy; 2026 Haiqing Li &mdash; Built with care. <a href="#hero">Back to top â†‘</a></p>
 </footer>
 
 <script>
