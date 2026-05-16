@@ -332,11 +332,15 @@
             transform: translateY(-4px);
         }
         .edu-icon {
-            width: 90px; height: 90px; flex-shrink: 0;
+            width: 160px; height: 120px; flex-shrink: 0;
+            border-radius: 16px; overflow: hidden;
             background: linear-gradient(135deg, #e8d5b7, #c4a882);
             border-radius: 20px; display: flex;
             align-items: center; justify-content: center;
-            font-size: 2.5rem;
+        }
+        .edu-icon img {
+            width: 100%; height: 100%; object-fit: cover;
+        }
         }
         .edu-info h3 {
             font-family: 'Cormorant Garamond', serif;
@@ -604,7 +608,7 @@
         </div>
         <div class="timeline">
             <div class="photo-banner reveal">
-                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80" alt="Professional workspace">
+                <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=1200&q=80" alt="Financial district skyline">
             </div>
             <div class="timeline-item reveal">
                 <span class="timeline-date">Jul 2021 — Dec 2024</span>
@@ -643,7 +647,7 @@
             <div class="section-line"></div>
         </div>
         <div class="edu-card reveal">
-            <div class="edu-icon">🎓</div>
+            <div class="edu-icon"><img src="https://images.unsplash.com/photo-1562774053-701939374585?w=400&q=80" alt="University campus"></div>
             <div class="edu-info">
                 <h3>SUNY Binghamton</h3>
                 <p class="degree">Bachelor of Arts in Economics</p>
